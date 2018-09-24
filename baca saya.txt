@@ -1,0 +1,4 @@
+import database terlebih dahulu
+
+buat database dengan nama test
+kemudia import file user.sql di folder database
