@@ -8,7 +8,7 @@ $db = new database();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>tugas crud</title>
+    <title>tugas web programming 2</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
@@ -34,29 +34,18 @@ th{
 <body>
   
     <section>
- 
-        <div class ="set"> 
-    <div><img src="image/1.png" width="150" height="150" ></div>
-    <div><img src="image/2.png" width="150" height="150"></div>
-    <div><img src="image/3.png" width="150" height="150"></div>
-    <div><img src="image/4.png" width="150" height="150"></div>
-    <div><img src="image/1.png" width="150" height="150"></div>
-    <div><img src="image/2.png" width="150" height="150"></div>
-    <div><img src="image/3.png" width="150" height="150"></div>
-    <div><img src="image/4.png" width="150" height="150"></div>
-        </div>
-        
-        <h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:white;"><i class ="material-icons" style="
-vertical-align=midle; position:relative; text-align:center; font-size:70px; color:white; ">bubble_chart</i>CRUD APP</h5>
+
+       <h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:black;"
+       >Data Mahasiswa</h5>
        <a href="input.php" title="Tambah Data" class="btn-floating btn-large waves-effect waves-light red" >
-        <i class="material-icons" style="position:relative; left:28%; font-size:60px; color:#33ccff;">add_circle</i></a>
+        <i class="material-icons" style="position:relative; left:28%; font-size:60px; color:black;">add_circle</i></a>
        
         <table style="position:relative;" class="highlight">
         <thead>
           <tr>
           <th data-field="id">No</th>
               <th data-field="id">Nama</th>
-              <th data-field="name">ID</th>
+              <th data-field="name">Username</th>
               <th data-field="price">Email</th>
               <th data-field="price">Password</th>
               <th data-field="price">Tool</th>
@@ -68,18 +57,20 @@ vertical-align=midle; position:relative; text-align:center; font-size:70px; colo
 	?>
         <tbody>
           <tr>
-        <td style="color:white;"><?php echo $no++; ?></td>
-		<td style="color:white;"><?php echo $data['nama']; ?></td>
-		<td style="color:white;"><?php echo $data['alamat']; ?></td>
-		<td style="color:white;"><?php echo $data['usia']; ?></td>
-        <td style="color:white;"><?php echo $data['email']; ?></td>
+        <td style="color:black;"><?php echo $no++; ?></td>
+		<td style="color:black;"><?php echo $data['nama']; ?></td>
+		<td style="color:black;"><?php echo $data['alamat']; ?></td>
+		<td style="color:black;"><?php echo $data['usia']; ?></td>
+        <td style="color:black;"><?php echo $data['email']; ?></td>
             <td> 
               
      
-   <a href="edit.php?id=<?php echo $data['id']; ?>&aksi=edit" class="btn-floating yellow darken-2" title="edit data"><i class="material-icons"
-   style="font-size:25px; color:#fff;">edit</i></a>
-      <a href="proses.php?id=<?php echo $data['id']; ?>&aksi=hapus" class="btn-floating green" title="hapus data"><i class="material-icons"
-    style="font-size:25px; color:red;">delete</i></a>
+   <a href="edit.php?id=<?php echo $data['id']; ?>&aksi=edit" class="btn-floating yellow darken-2" title="edit data">
+   <i class="material-icons"
+   style="font-size:25px; color:black;">edit</i></a>
+      <a href="proses.php?id=<?php echo $data['id']; ?>&aksi=hapus" class="btn-floating green" title="hapus data">
+      <i class="material-icons"
+    style="font-size:25px; color:black;">delete</i></a>
             </td>
           </tr>
         </tbody>
