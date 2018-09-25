@@ -82,35 +82,40 @@ function nospecial(event) {
 </head>
 <body>
 <section>
- 
-<h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:white;">Input Data</h5>
+ <div class ="set"> 
+<div><img src="image/1.png" width="150" height="150" ></div>
+<div><img src="image/2.png" width="150" height="150"></div>
+<div><img src="image/3.png" width="150" height="150"></div>
+<div><img src="image/4.png" width="150" height="150"></div>
+<div><img src="image/1.png" width="150" height="150"></div>
+<div><img src="image/2.png" width="150" height="150"></div>
+<div><img src="image/3.png" width="150" height="150"></div>
+<div><img src="image/4.png" width="150" height="150"></div>
+ </div>
+<h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:white;"><i class ="material-icons" style="
+vertical-align=midle; position:relative; text-align:center; font-size:70px; color:white; ">bubble_chart</i>tambah data</h5>
 <br/>
-      <form style="color:white; font-size:25px;  text-align:center; padding:3px; 
-      " action="proses.php?aksi=tambah" method="post">
+      <form style="color:white; font-size:25px;  text-align:center; padding:3px; " action="proses.php?aksi=tambah" method="post">
         <div class="input-field">
         <span><i style="font-size:30px;" class="material-icons">person</i> Nama</span>
-          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;
-          " id="icon_prefix" type="text" required="required" name="nama" id="nama" class="validate"
+          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;" id="icon_prefix" type="text" required="required" name="nama" id="nama" class="validate"
           onkeydown="return testInput(event);"          >
           
         </div>
         <div class="input-field">
         <span><i style="font-size:30px;" class="material-icons">laptop</i> ID</span>
-          <input style="position:relative;left:32px; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="text" required="required" name="alamat" id="alamat"
+          <input style="position:relative;left:32px; width:30%; height:40px; padding:5px;" id="icon_telephone" type="text" required="required" name="alamat" id="alamat"
             class="validate"  onkeydown="return nospecial(event);">
          
         </div>
         <div class="input-field">
         <span ><i style="font-size:30px;" class="material-icons">email</i> Email</span>
-          <input style="position:relative; left:18px; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="email" required="required" name="usia" id="usia"  class="validate">
+          <input style="position:relative; left:18px; width:30%; height:40px; padding:5px;" id="icon_telephone" type="email" required="required" name="usia" id="usia"  class="validate">
           
         </div>
         <div class="input-field">
         <span ><i style="font-size:30px;" class="material-icons">vpn_key</i> Password</span>
-          <input style="position:relative; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="password" required="required" name="email" id="email"  class="validate">
+          <input style="position:relative; width:30%; height:40px; padding:5px;" id="icon_telephone" type="password" required="required" name="email" id="email"  class="validate">
           
         </div>
         <div class="input-field">

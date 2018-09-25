@@ -86,42 +86,42 @@ function nospecial(event) {
 <body>
 
 <section>
- 
-<h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:white;">Edit Data</h5>
-      <form style="color:white; font-size:25px;  text-align:center; padding:3px; 
-      " action="proses.php?aksi=update" method="post">
+ <div class ="set"> 
+<div><img src="image/1.png" width="150" height="150" ></div>
+<div><img src="image/2.png" width="150" height="150"></div>
+<div><img src="image/3.png" width="150" height="150"></div>
+<div><img src="image/4.png" width="150" height="150"></div>
+<div><img src="image/1.png" width="150" height="150"></div>
+<div><img src="image/2.png" width="150" height="150"></div>
+<div><img src="image/3.png" width="150" height="150"></div>
+<div><img src="image/4.png" width="150" height="150"></div>
+ </div>
+<h5 style="vertical-align=midle; position:relative; text-align:center; font-size:50px; color:white;"><i class ="material-icons" style="
+vertical-align=midle; position:relative; text-align:center; font-size:70px; color:white; ">bubble_chart</i>Edit Data</h5>
+      <form style="color:white; font-size:25px;  text-align:center; padding:3px; " action="proses.php?aksi=update" method="post">
 <?php
 foreach($db->edit($_GET['id']) as $data){
 ?>
         <div class="input-field">
         <span><i style="font-size:30px;" class="material-icons">person</i> Nama</span>
          
-          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;
-          " id="icon_prefix" type="hidden" name="id" value="<?php echo $data['id']; ?>" id="id" class="validate">
-          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;
-          " id="icon_prefix" type="text" name="nama" onkeydown="return testInput(event);
-          " required="required" id="nama" value="<?php echo $data['nama']; ?>" class="validate">
+          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;" id="icon_prefix" type="hidden" name="id" value="<?php echo $data['id']; ?>" id="id" class="validate">
+          <input style="position:relative;left:10px; width:30%; height:40px; padding:5px;" id="icon_prefix" type="text" name="nama" onkeydown="return testInput(event);" required="required" id="nama" value="<?php echo $data['nama']; ?>" class="validate">
           
         </div>
         <div class="input-field">
         <span><i style="font-size:30px;" class="material-icons">laptop</i> ID</span>
-          <input style="position:relative;left:32px; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="text" name="alamat" onkeydown="return nospecial(event);
-          " required="required" id="alamat" value="<?php echo $data['alamat']; ?>"  class="validate">
+          <input style="position:relative;left:32px; width:30%; height:40px; padding:5px;" id="icon_telephone" type="text" name="alamat" onkeydown="return nospecial(event);" required="required" id="alamat" value="<?php echo $data['alamat']; ?>"  class="validate">
           
         </div>
         <div class="input-field">
         <span ><i style="font-size:30px;" class="material-icons">email</i> Email</span>
-          <input style="position:relative; left:18px; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="email" name="usia" id="usia" required="required" value="<?php echo $data['usia'];
-           ?>"   class="validate">
+          <input style="position:relative; left:18px; width:30%; height:40px; padding:5px;" id="icon_telephone" type="email" name="usia" id="usia" required="required" value="<?php echo $data['usia']; ?>"   class="validate">
          
         </div>
         <div class="input-field">
         <span ><i style="font-size:30px;" class="material-icons">vpn_key</i> Password</span>
-          <input style="position:relative; width:30%; height:40px; padding:5px;
-          " id="icon_telephone" type="password" name="email" id="email" required="required" value="<?php echo $data['email']; 
-          ?>"  class="validate">
+          <input style="position:relative; width:30%; height:40px; padding:5px;" id="icon_telephone" type="password" name="email" id="email" required="required" value="<?php echo $data['email']; ?>"  class="validate">
           
         </div>
         <div class="input-field">
